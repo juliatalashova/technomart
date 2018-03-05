@@ -16,44 +16,54 @@ xhttp.send(formData);
 ```
 
 # Register customer
-Request.
-    Path: controller/register.php
-    Type: POST
-    Parameters:
-        'firstname' - user's first name
-        'lastname' - user's last name
-        'password' - user's password
-        'email' - user's email
+Request.<br />
+    Path: controller/register.php<br />
+    Type: POST<br />
+    Parameters:<br />
+        'firstname' - user's first name<br />
+        'lastname' - user's last name<br />
+        'password' - user's password<br />
+        'email' - user's email<br />
 
-Responses.
-    Success:
+Responses.<br />
+    Success:<br />
+    ```
     {"status":"success","message":"Customer has been created"}
-
-    Error:
+    ```
+    <br />
+    Error:<br />
+    ```
     {"status":"error","message": "any error message"}
+    ```
 
 # Sign out
-Request.
-    Path: controller/signout.php
+Request.<br />
+    Path: controller/signout.php<br />
 
 # Sign in
-Request.
-    Path: controller/signin.php
-    Type: POST
-    Parameters:
-        'email' - user's email
-        'password' - user's password
+Request.<br />
+    Path: controller/signin.php<br />
+    Type: POST<br />
+    Parameters:<br />
+        'email' - user's email<br />
+        'password' - user's password<br />
 
-Response.
-    Success:
-    {"status":"success","customer":{"firstname":"Michael","lastname":"Michael"}}
+Response.<br />
+    Success:<br />
+    ```
+    {"status":"success","customer":{"firstname":"Michael","lastname":"Michael"}}<br />
+    ```
 
     Error
+    ```
     {"status":"error","message": "any error message"}
+    ```
 
 # Check if customer is logged in
-Request.
-    Path: controller/check_session.php
+Request.<br />
+    Path: controller/check_session.php<br />
     
 Response.
+    ```
     {"firstname":"Customer's firstname","lastname":"Customer's lastname"}
+    ```
