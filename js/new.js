@@ -120,12 +120,13 @@ if(document.contains(document.getElementById('signUpForm'))) {
         var isValidPwd = validatePwd();
         if (isValidText == true && isValidEmail == true && isValidPwd == true) {
             //signUpForm.submit();
-            var formData = new FormData(signUpForm);
+            var formData = new FormData(document.getElementById('signUpForm'));
 
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                    console.log(this.responseText);
+                    var response = this.responseText;
+                    console.log(response);
                 }
             };
             xhttp.open('POST', 'https://miffka1986.000webhostapp.com/register.php', true);
