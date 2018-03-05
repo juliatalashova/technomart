@@ -1,4 +1,4 @@
-# Ajax Request example:
+# Ajax Request example
 ```
 var formData = new FormData();
 formData.append('firstname', 'John');
@@ -16,54 +16,53 @@ xhttp.send(formData);
 ```
 
 # Register customer
-Request.<br />
-    Path: controller/register.php<br />
-    Type: POST<br />
-    Parameters:<br />
-        'firstname' - user's first name<br />
-        'lastname' - user's last name<br />
-        'password' - user's password<br />
-        'email' - user's email<br />
+**Request.**<br />
+Path: controller/register.php<br />
+Type: POST<br />
+Parameters:<br />
+        &nbsp;'firstname' - user's first name<br />
+        &nbsp;'lastname' - user's last name<br />
+        &nbsp;'password' - user's password<br />
+        &nbsp;'email' - user's email<br />
 
-Responses.<br />
-    Success:<br />
+**Responses.**<br />
+Success:<br />
     ```
     {"status":"success","message":"Customer has been created"}
     ```
     <br />
-    Error:<br />
+Error:<br />
     ```
     {"status":"error","message": "any error message"}
     ```
-
+<br />
 # Sign out
-Request.<br />
-    Path: controller/signout.php<br />
-
+**Request.**<br />
+Path: controller/signout.php<br />
+<br />
 # Sign in
-Request.<br />
-    Path: controller/signin.php<br />
-    Type: POST<br />
-    Parameters:<br />
+**Request.**<br />
+Path: controller/signin.php<br />
+Type: POST<br />
+Parameters:<br />
         'email' - user's email<br />
         'password' - user's password<br />
-
-Response.<br />
+<br />
+**Response.**<br />
     Success:<br />
     ```
-    {"status":"success","customer":{"firstname":"Michael","lastname":"Michael"}}<br />
+    {"status":"success","customer":{"firstname":"Michael","lastname":"Michael"}}
     ```
-
-    Error
+    Error<br />
     ```
     {"status":"error","message": "any error message"}
     ```
-
+<br />
 # Check if customer is logged in
-Request.<br />
-    Path: controller/check_session.php<br />
-    
-Response.
+**Request.**<br />
+Path: controller/check_session.php<br />
+    <br />
+**Response.**<br />
     ```
     {"firstname":"Customer's firstname","lastname":"Customer's lastname"}
     ```
