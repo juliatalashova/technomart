@@ -38,7 +38,7 @@ Error:<br />
 <br />
 # Sign out
 **Request.**<br />
-Path: controller/signout.php<br />
+Path: controller/signout.php
 <br />
 # Sign in
 **Request.**<br />
