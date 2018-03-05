@@ -1,5 +1,4 @@
 # Ajax Request example:
-=====================
 ```
 var formData = new FormData();
 formData.append('firstname', 'John');
@@ -16,10 +15,9 @@ xhttp.open('POST', 'controller/register.php', true);
 xhttp.send(formData);
 ```
 
-Register customer
-=================
+# Register customer
 Request.
-    Path: controller/register.php
+    Path: controller/register.php
     Type: POST
     Parameters:
         'firstname' - user's first name
@@ -28,34 +26,34 @@ Request.
         'email' - user's email
 
 Responses.
-    Success:
+    Success:
     {"status":"success","message":"Customer has been created"}
 
     Error:
     {"status":"error","message": "any error message"}
 
-Sign out
-========
+# Sign out
 Request.
-    Path: controller/signout.php
+    Path: controller/signout.php
 
-Sign in
-=======
+# Sign in
 Request.
-    Path: controller/signin.php
+    Path: controller/signin.php
     Type: POST
     Parameters:
         'email' - user's email
         'password' - user's password
 
 Response.
-    Success:
+    Success:
     {"status":"success","customer":{"firstname":"Michael","lastname":"Michael"}}
 
     Error
     {"status":"error","message": "any error message"}
 
-Check if customer is logged in
-==============================
+# Check if customer is logged in
 Request.
-    Path: controller/check_session.php
+    Path: controller/check_session.php
+    
+Response.
+    {"firstname":"Customer's firstname","lastname":"Customer's lastname"}
